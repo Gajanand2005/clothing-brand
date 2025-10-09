@@ -1,6 +1,6 @@
 import http from 'http';
 import nodemailer from 'nodemailer';
-import sendEmailFun from './sendEmail';
+import sendEmailFun from './sendEmail.js';
 
 //configure thr SMTP transporter
 const transporter = nodemailer.createTransport({
