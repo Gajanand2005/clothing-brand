@@ -17,7 +17,7 @@ const HomeCatSlider = () => {
           modules={[Navigation]}
           className="mySwiper"
         >
-          {[...Array(12)].map((index) => (
+          {[...Array(12)].map((_, index) => (
             <SwiperSlide key={`slide-${index}`}>
               <Link to='/'>
                 <div className='item py-8 px-3 bg-white rounded-sm text-center flex flex-center items-center justify-center flex-col'>

@@ -1,12 +1,27 @@
+
 import React from 'react'
 import HomeSlider from '../../components/HomeSlider'
+
 import HomeCatSlider from '../../components/HomeCatSlider'
 import { FaShippingFast } from "react-icons/fa";
 import AdsBannerSlider from '../../components/AdsBannerSlider';
+import AdsBannerSliderV2 from '../../components/AdsBannerSliderV2';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Box from '@mui/material/Box';
 import ProductSlider from '../../components/ProductSlider';
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation } from 'swiper/modules';
+import BlogItem from '../../components/Blogitem';  // Added missing import
+import BlogList from '../../components/BlogList';
+
+import BannerBox from '../../components/BannerBox';
+ // Fixed import path for FooterSection
+ 
+
 const Home = () => {
  const [value, setValue] = React.useState(0);
 
@@ -14,8 +29,20 @@ const Home = () => {
     setValue(newValue);
   }; 
   return (
+    
     <div>
       <HomeSlider />
+      <section className='py-6'>
+        <div className='container flex gap-5'>
+          <div className=' part1 w-[70%]'>
+            </div>
+            <div className='part2 w-[70%] flex items-center gap-5 justify-between flex-col'>
+              <BannerBox info="left" img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-1.jpg'} link={"/"} />
+              <BannerBox info="left" img={'https://demos.codezeel.com/prestashop/PRS21/PRS210502/img/cms/sub-banner-2.jpg'} link={"/"} />
+            </div>
+        </div>
+        </section>
+
       <HomeCatSlider />
 
       <section className='bg-white py-8'>
@@ -49,13 +76,13 @@ const Home = () => {
           </div>
         </div>
 
-       <ProductSlider items={5} />
+       <ProductSlider items={6} />
 
 
         </div>
       </section>
 
-       <section className='py-16 bg-white  '>
+       <section className='py-4 pt-2 bg-white  '>
         <div className='container'> 
         <div className='freeShipping  py-4 p-4 border-2 border-[#ff5252] flex items-center justify-between rounded-md mb-7'> 
       <div className='col1 flex items-center gap-4'>
@@ -67,16 +94,40 @@ const Home = () => {
         <p className='mb-0 font-[500]'>Free Delivery Now On Your First Order and over $200</p>
       </div>
 
-        <p className='font-bold text-[25px]'>Only $200*</p>
+        <p className='font-bold text-[25px]'>Only $200*</p><br />
 
         </div>
+       
 
-        <AdsBannerSlider items={4}/>
+<AdsBannerSliderV2 items={4}/>
+        
 
         </div>
        </section>
+<section className='py-5 pt-0 bg-white '>
+  <div className='container'>
+    <h2 className='text-[22px] font-[600]  '>Latest Products</h2>
+    <ProductSlider items={6} />
+  </div>
+</section>
 
-       <br /><br /><br /><br /><br /><br />
+<section className='py-5 pt-0 bg-white '>
+  <div className='container'>
+    <h2 className='text-[22px] font-[600]  '>Latest Products</h2>
+    <AdsBannerSlider items={3}/>
+  </div>
+</section>
+<section className='py-5 pt-0 bg-white blogSection '>
+  <div className='container'>
+    <h2 className='text-[22px] font-[600] mb-4'>From The Blog</h2>
+    <BlogList />
+   
+    </div>
+    
+</section>
+
+      
+
     </div>
   )
 }
