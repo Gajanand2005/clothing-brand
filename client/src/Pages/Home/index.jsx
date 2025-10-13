@@ -15,8 +15,9 @@ const Home = () => {
   }; 
   return (
     <div>
-      <HomeSlider />
       <HomeCatSlider />
+      <HomeSlider />
+      
 
       <section className='bg-white py-8'>
         <div className='container-fluid'>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.jpg";
+import logo from "../../assets/ba-removebg-preview.png";
 import Search from "../Search";
 
 import Badge from "@mui/material/Badge";
@@ -60,7 +60,7 @@ const Header = () => {
           <div className="container flex flex-col md:flex-row items-center justify-between gap-3 ">
             <div className="col1 w-full md:w-[25%]">
               <Link to={"/"}>
-                <img src={logo} alt="Logo" />
+                <img src={logo} alt="Logo" className="h-20 w-50 rounded-2xl"/>
               </Link>
             </div>
             <div className="col2 w-full md:w-[45%] ">

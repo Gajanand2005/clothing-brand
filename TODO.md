@@ -1,0 +1,3 @@
+- [ ] Separate "Fashion" and "West Wear" into individual list items in Navigation component
+- [ ] Add submenu for "West Wear" with items like "Shirts" and "Pants"
+- [ ] Test the navigation to ensure submenus appear on hover

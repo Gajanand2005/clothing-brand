@@ -34,7 +34,7 @@ const CategoryPanel = (props) => {
         <ul className='w-full'>
           <li className='list-none relative flex-col'>
             <Link to='/' className='w-full'>
-              <Button className='w-full !text-left !justify-start !px-3 !text-black'>Fashion</Button>
+              <Button className='w-full !text-left !justify-start !px-3 !text-black'>Ethnic</Button>
             </Link>
             {submenuIndex === 0 ? (
              <FaRegSquareMinus
@@ -69,22 +69,57 @@ const CategoryPanel = (props) => {
                       <ul className='inner_submenu  w-full !pl-3 !px-3'>
                         <li className='list-none relative mb-1'>
                           <Link to='/' className='link w-full !text-left !justify-start transition text-[13px]'>
-                            Smart Tablet
+                           Organza
                           </Link>
                         </li>
                         <li className='list-none relative mb-1'>
                           <Link to='/' className='link w-full !text-left !justify-start transition text-[13px]'>
-                            Crepe T-shirt
+                            Georgette
                           </Link>
                         </li>
                         <li className='list-none relative mb-1'>
                           <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
-                            Leather Watch
+                           Silk
                           </Link>
                         </li>
                         <li className='list-none relative mb-1'>
                           <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
-                            Rolling Diamond
+                            Banarsi
+                          </Link>
+                        </li>
+                        <li className='list-none relative mb-1'>
+                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
+                            Cotton
+                          </Link>
+                        </li>
+                        <li className='list-none relative mb-1'>
+                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
+                            Chinnon
+                          </Link>
+                        </li>
+                        <li className='list-none relative mb-1'>
+                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
+                            Woollen
+                          </Link>
+                        </li>
+                        <li className='list-none relative mb-1'>
+                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
+                            Lucknowi
+                          </Link>
+                        </li>
+                        <li className='list-none relative mb-1'>
+                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
+                            Crepe
+                          </Link>
+                        </li>
+                        <li className='list-none relative mb-1'>
+                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
+                            Net
+                          </Link>
+                        </li>
+                        <li className='list-none relative mb-1'>
+                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
+                            Chiffon
                           </Link>
                         </li>
                       </ul>
@@ -98,7 +133,7 @@ const CategoryPanel = (props) => {
         <ul className='w-full'>
           <li className='list-none relative flex-col'>
             <Link to='/' className='w-full'>
-              <Button className='w-full !text-left !justify-start !px-3 !text-black'>Fashion</Button>
+              <Button className='w-full !text-left !justify-start !px-3 !text-black'>West Wear</Button>
             </Link>
             {submenuIndex === 1 ? (
              <FaRegSquareMinus
@@ -133,24 +168,15 @@ const CategoryPanel = (props) => {
                       <ul className='inner_submenu  w-full !pl-3 !px-3'>
                         <li className='list-none relative mb-1'>
                           <Link to='/' className='link w-full !text-left !justify-start transition text-[13px]'>
-                            Smart Tablet
+                            Winter Wear
                           </Link>
                         </li>
                         <li className='list-none relative mb-1'>
                           <Link to='/' className='link w-full !text-left !justify-start transition text-[13px]'>
-                            Crepe T-shirt
+                           Summer Wear
                           </Link>
                         </li>
-                        <li className='list-none relative mb-1'>
-                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
-                            Leather Watch
-                          </Link>
-                        </li>
-                        <li className='list-none relative mb-1'>
-                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
-                            Rolling Diamond
-                          </Link>
-                        </li>
+                        
                       </ul>
                     )}
                   </li>
@@ -160,7 +186,7 @@ const CategoryPanel = (props) => {
           </li>
           <li className='list-none relative flex-col'>
             <Link to='/' className='w-full'>
-              <Button className='w-full !text-left !justify-start !px-3 !text-black'>Bags</Button>
+              <Button className='w-full !text-left !justify-start !px-3 !text-black'>Co-ords</Button>
             </Link>
             {submenuIndex === 2 ? (
              <FaRegSquareMinus
@@ -195,24 +221,15 @@ const CategoryPanel = (props) => {
                       <ul className='inner_submenu  w-full !pl-3 !px-3'>
                         <li className='list-none relative mb-1'>
                           <Link to='/' className='link w-full !text-left !justify-start transition text-[13px]'>
-                            Smart Tablet
+                            Western Co-ords
                           </Link>
                         </li>
                         <li className='list-none relative mb-1'>
                           <Link to='/' className='link w-full !text-left !justify-start transition text-[13px]'>
-                            Crepe T-shirt
+                            Ethnic Co-ords
                           </Link>
                         </li>
-                        <li className='list-none relative mb-1'>
-                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
-                            Leather Watch
-                          </Link>
-                        </li>
-                        <li className='list-none relative mb-1'>
-                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
-                            Rolling Diamond
-                          </Link>
-                        </li>
+                      
                       </ul>
                     )}
                   </li>
@@ -220,68 +237,7 @@ const CategoryPanel = (props) => {
               </li>
             )}
           </li>
-          <li className='list-none relative flex-col'>
-            <Link to='/' className='w-full'>
-              <Button className='w-full !text-left !justify-start !px-3 !text-black'>Footwear</Button>
-            </Link>
-            {submenuIndex === 3 ? (
-             <FaRegSquareMinus
-             className=" absolute top-[10px] right-[15px] cursor-pointer flex-col"
-            onClick={() => openSubmenu(3)}
-           />
-            ) : (
-          <FaRegPlusSquare
-          className="absolute top-[10px] right-[15px] cursor-pointer"
-         onClick={() => openSubmenu(3)}
-         />
-           )}
-            {submenuIndex === 3 && (
-              <li className='list-none relative mb-1'>
-                <ul className='submenu w-full pl-3'>
-                  <li className='list-none relative mb-1'>
-                    <Link to='/'>
-                      <Button className='w-full !text-left !justify-start !px-3 !text-black'>Apparel</Button>
-                    </Link>
-                    {innerSubmenuIndex === 3 ? (
-                    <FaRegSquareMinus
-                     className="absolute top-[10px] right-[15px] cursor-pointer justify-end" onClick={() => openInnerSubmenu(3)}
-                    />
-                  ) : (
-              <FaRegPlusSquare
-              className="absolute top-[10px] right-[15px] cursor-pointer justify-end"
-              onClick={() => openInnerSubmenu(3)}
-           />
-           )}
-           {
-            innerSubmenuIndex === 3 && (
-                      <ul className='inner_submenu  w-full !pl-3 !px-3'>
-                        <li className='list-none relative mb-1'>
-                          <Link to='/' className='link w-full !text-left !justify-start transition text-[13px]'>
-                            Smart Tablet
-                          </Link>
-                        </li>
-                        <li className='list-none relative mb-1'>
-                          <Link to='/' className='link w-full !text-left !justify-start transition text-[13px]'>
-                            Crepe T-shirt
-                          </Link>
-                        </li>
-                        <li className='list-none relative mb-1'>
-                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
-                            Leather Watch
-                          </Link>
-                        </li>
-                        <li className='list-none relative mb-1'>
-                          <Link to='/' className='link w-full !text-left !justify-start transition text-[14px]'>
-                            Rolling Diamond
-                          </Link>
-                        </li>
-                      </ul>
-                    )}
-                  </li>
-                </ul>
-              </li>
-            )}
-          </li>
+          
         </ul>
       </div>
       <Divider />
