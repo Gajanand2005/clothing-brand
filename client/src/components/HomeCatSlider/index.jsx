@@ -8,7 +8,7 @@ import { Navigation, Autoplay } from 'swiper/modules';
 // 🖼️ Import images
 import suit from "../../assets/suit.png";
 import bottom from "../../assets/bottom.png";
-import dethnic from "../../assets/co-ord ethnic.png";
+import dethnic from "../../assets/co-ord ethnic.jpg";
 import dress from "../../assets/dress.jpg";
 import kurti from "../../assets/kurti.jpg";
 import skirt from "../../assets/skirt.jpg";
@@ -22,12 +22,12 @@ const HomeCatSlider = () => {
       <div className='container'>
         <Swiper
           slidesPerView={6}
-          spaceBetween={-300}  // 👈 reduced spacing
+          spaceBetween={-300}
           modules={[Navigation, Autoplay]}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           className="mySwiper"
         >
-          {[ 
+          {[
             { img: suit, title: "Suit" },
             { img: bottom, title: "Bottom" },
             { img: dethnic, title: "Co-ord ethnic" },

@@ -31,8 +31,7 @@ const Navigation = () => {
               <li className="list-none">
                 <Link
                   to="/"
-                  className="link transition text-[16px] font-[500] !font-bold !text-[rgba(0,0,0,0.7)] hover:!text-[#ff5252] cursor-pointer"
-                >
+                  className="link transition text-[16px] font-[500] !font-bold !text-[rgba(0,0,0,0.7)] hover:!text-[#ff5252] cursor-pointer">
                   <Button className="link transition !font-[500] !font-bold !text-[rgba(0,0,0,0.7)] hover:!text-[#ff5252]">
                     Home
                   </Button>
@@ -43,6 +42,7 @@ const Navigation = () => {
                   to="/"
                   className="link transition text-[16px] !font-[500]"
                 >
+                  
                   <Button className="link transition !font-[500] !font-bold !text-[rgba(0,0,0,0.7)] hover:!text-[#ff5252]">
                     Ethnic
                   </Button>
@@ -138,6 +138,8 @@ const Navigation = () => {
                           </li>
                         </ul>
                       </div>
+
+
                     </li>
                   </ul>
                 </div>
@@ -151,6 +153,7 @@ const Navigation = () => {
                     West Wear
                   </Button>
                 </Link>
+
                 <div className="submenu absolute top-[120%] left-[0%] min-w-[150px] bg-white shadow-md opacity-0 transition-all">
                   <ul>
                     <li className="list-none w-full relative">
@@ -164,17 +167,20 @@ const Navigation = () => {
                           <li className="list-none w-full">
                             <Link to="/" className="w-full">
                               <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
-                                Top
+                                Hoodies
                               </Button>
                             </Link>
                           </li>
                           <li className="list-none w-full">
                             <Link to="/" className="w-full">
                               <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
-                                Bottom
+                                Jackets
                               </Button>
                             </Link>
                           </li>
+                          
+                         
+                         
                         </ul>
                       </div>
                     </li>
@@ -184,29 +190,11 @@ const Navigation = () => {
                           Summer Wear
                         </Button>
                       </Link>
-                      <div className="submenu absolute top-[0%] left-[100%] min-w-[150px] bg-white shadow-md opacity-0 transition-all">
-                        <ul>
-                          <li className="list-none w-full">
-                            <Link to="/" className="w-full">
-                              <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
-                                Top
-                              </Button>
-                            </Link>
-                          </li>
-                          <li className="list-none w-full">
-                            <Link to="/" className="w-full">
-                              <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
-                                Bottom
-                              </Button>
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li className="list-none relative">
+               <li className="list-none relative">
                 <Link
                   to="/"
                   className="link transition text-[16px] !font-[500]"
@@ -223,16 +211,17 @@ const Navigation = () => {
                           Western Co-Ords
                         </Button>
                       </Link>
-                    </li>
-                    <li className="list-none w-full">
+                      </li>
+                      <li className="list-none w-full">
                       <Link to="/" className="w-full">
                         <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
                           Ethnic Co-Ords
                         </Button>
                       </Link>
-                    </li>
-                  </ul>
-                </div>
+                      </li>
+                      </ul>
+                      </div>
+                
               </li>
             </ul>
           </div>
