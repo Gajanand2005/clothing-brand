@@ -167,20 +167,17 @@ const Navigation = () => {
                           <li className="list-none w-full">
                             <Link to="/" className="w-full">
                               <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
-                                Hoodies
+                                Top
                               </Button>
                             </Link>
                           </li>
                           <li className="list-none w-full">
                             <Link to="/" className="w-full">
                               <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
-                                Jackets
+                              Bottom
                               </Button>
                             </Link>
                           </li>
-                          
-                         
-                         
                         </ul>
                       </div>
                     </li>
@@ -190,6 +187,24 @@ const Navigation = () => {
                           Summer Wear
                         </Button>
                       </Link>
+                      <div className="submenu absolute top-[0%] left-[100%] min-w-[150px] bg-white shadow-md opacity-0 transition-all">
+                        <ul>
+                          <li className="list-none w-full">
+                            <Link to="/" className="w-full">
+                              <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                                Top
+                              </Button>
+                            </Link>
+                          </li>
+                          <li className="list-none w-full">
+                            <Link to="/" className="w-full">
+                              <Button className="!text-[rgba(0,0,0,0.8)] w-full !text-left !justify-start !rounded-none">
+                              Bottom
+                              </Button>
+                            </Link>
+                          </li>
+                        </ul>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -227,8 +242,7 @@ const Navigation = () => {
           </div>
           <div className="col_3 w-[20%]">
             <p className="text-[14px] font-bold flex items-center gap-3 mb-0 mt-0">
-              <MdOutlineRocketLaunch className="text-[18px]" /> International
-              Delivery
+              <MdOutlineRocketLaunch className="text-[18px]" /> World Wide Shipping
             </p>
           </div>
         </div>

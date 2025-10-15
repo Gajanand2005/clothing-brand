@@ -9,9 +9,9 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import suit from "../../assets/suit.png";
 import bottom from "../../assets/bottom.png";
 import dethnic from "../../assets/co-ord ethnic.jpg";
-import dress from "../../assets/dress.jpg";
+import dress from "../../assets/dress.png";
 import kurti from "../../assets/kurti.jpg";
-import skirt from "../../assets/skirt.jpg";
+import skirt from "../../assets/skirt.png";
 import top from "../../assets/top.png";
 import west from "../../assets/west co-ords.jpg";
 import wint from "../../assets/wint.png";
@@ -22,7 +22,7 @@ const HomeCatSlider = () => {
       <div className='container'>
         <Swiper
           slidesPerView={6}
-          spaceBetween={-300}
+          spaceBetween={-320}
           modules={[Navigation, Autoplay]}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           className="mySwiper"

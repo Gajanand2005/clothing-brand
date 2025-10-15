@@ -3,14 +3,17 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper/modules";
-
+import banner1 from '../../assets/ban1.jpg'
+import banner2 from '../../assets/ban2.jpg'
+import banner3 from '../../assets/ban3.jpg'
+import banner4 from '../../assets/ban4.jpg'
 const HomeSlider = () => {
   return (
     <div className="homeSlider">
       <div className="container">
         <Swiper
-          spaceBetween={30}
-          navigation={true}
+          spaceBetween={-570}
+       
           modules={[Navigation, Autoplay]}
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           className="sliderHome"
@@ -18,81 +21,72 @@ const HomeSlider = () => {
           <SwiperSlide key="slide-1">
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://serviceapi.spicezgold.com/download/1748955932914_NewProject(1).jpg"
+                src={banner1}
                 alt="Banner Slide"
-                className="w-full"
+                className="w-[50%] "
               />
             </div>
           </SwiperSlide>
           <SwiperSlide key="slide-2">
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://serviceapi.spicezgold.com/download/1755503364377_1721277298204_banner.jpg"
+                src={banner2}
                 alt="Banner Slide"
-                className="w-full"
+                className="w-[50%] "
               />
             </div>
           </SwiperSlide>
           <SwiperSlide key="slide-3">
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://serviceapi.spicezgold.com/download/1751685144346_NewProject(11).jpg"
+                src={banner3}
                 alt="Banner Slide"
-                className="w-full"
+                className="w-[50%]"
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide key="slide-4">
+           <SwiperSlide key="slide-3">
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://serviceapi.spicezgold.com/download/1751685130717_NewProject(8).jpg"
+                src={banner4}
                 alt="Banner Slide"
-                className="w-full"
+                className="w-[50%]"
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide key="slide-5">
+          <SwiperSlide key="slide-1">
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://serviceapi.spicezgold.com/download/1755503364377_1721277298204_banner.jpg"
+                src={banner1}
                 alt="Banner Slide"
-                className="w-full"
+                className="w-[50%]"
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide key="slide-6">
+          <SwiperSlide key="slide-2">
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://serviceapi.spicezgold.com/download/1748955932914_NewProject(1).jpg"
+                src={banner2}
                 alt="Banner Slide"
-                className="w-full"
+                className="w-[50%]"
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide key="slide-7">
+          <SwiperSlide key="slide-3">
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://serviceapi.spicezgold.com/download/1751685144346_NewProject(11).jpg"
+                src={banner3}
                 alt="Banner Slide"
-                className="w-full"
+                className="w-[50%]"
               />
             </div>
           </SwiperSlide>
-          <SwiperSlide key="slide-8">
+           <SwiperSlide key="slide-3">
             <div className="item rounded-[20px] overflow-hidden">
               <img
-                src="https://serviceapi.spicezgold.com/download/1748955932914_NewProject(1).jpg"
+                src={banner4}
                 alt="Banner Slide"
-                className="w-full"
-              />
-            </div>
-          </SwiperSlide>
-          <SwiperSlide key="slide-9">
-            <div className="item rounded-[20px] overflow-hidden">
-              <img
-                src="https://serviceapi.spicezgold.com/download/1751685130717_NewProject(8).jpg"
-                alt="Banner Slide"
-                className="w-full"
+                className="w-[50%]"
               />
             </div>
           </SwiperSlide>

@@ -15,23 +15,15 @@ const Footer = () => {
       <div className="col flex items-center justify-center flex-col group w-[15%]">
       <LiaShippingFastSolid  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
       <h3 className='text-[16px] font-[600]'>Free Shipping </h3>
-        <p className='text-[12px] font-[500]'>For all Orders Over $100</p>
+        <p className='text-[12px] font-[500]'>Only in India</p>
       </div>
-      <div className="col flex items-center justify-center flex-col group w-[15%]">
-      <PiKeyReturnBold   className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
-      <h3 className='text-[16px] font-[600] mt-3'>30 Days Returns </h3>
-        <p className='text-[12px] font-[500]'>For an Exchange Product</p>
-      </div>
+     
       <div className="col flex items-center justify-center flex-col group w-[15%]">
       <BsWallet2  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
       <h3 className='text-[16px] font-[600] mt-3'>Secured Payment </h3>
-        <p className='text-[12px] font-[500]'>Payment Cards Accepted</p>
+        <p className='text-[12px] font-[500]'>All type of payment</p>
       </div>
-      <div className="col flex items-center justify-center flex-col group w-[15%]">
-      <TfiGift  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
-      <h3 className='text-[16px] font-[600] mt-3'>Special Gifts </h3>
-        <p className='text-[12px] font-[500]'>Our First Product Order</p>
-      </div>
+      
       <div className="col flex items-center justify-center flex-col group w-[15%]">
       <BiSupport  className='text-[50px] transition-all duration-300 group-hover:text-red-600 group-hover:-translate-y-1'/>
       <h3 className='text-[16px] font-[600] mt-3'>Support 24/7 </h3>
@@ -46,11 +38,11 @@ const Footer = () => {
           {/* Contact us */}
           <div>
             <h3 className="text-base font-semibold mb-3">Contact us</h3>
-            <p className="mb-1 text-sm">Classyshop - Mega Super Store</p>
+            <p className="mb-1 text-sm">S-Mal Couture</p>
 
-            <p className="mb-1 text-sm">507-Union Trade Centre France</p>
+            <p className="mb-1 text-sm">Pull Bazar, Near Shiv Mandir Narnaul Haryana Pincode:- 123001</p>
 
-            <p className="mb-1 text-sm">sales@yourcompany.com</p>
+            <p className="mb-1 text-sm">smalcouture@gmail.com</p>
             <p className="text-red-500 font-bold mb-3 text-base">(+91) 9876-543-210</p>
             <div className="flex items-center gap-2 text-red-500 font-semibold cursor-pointer text-sm">
               <FaRegCommentDots size={20} />
@@ -63,21 +55,20 @@ const Footer = () => {
           <div>
             <h3 className="text-base font-semibold mb-3">Products</h3>
             <ul className="space-y-1 text-gray-700 text-sm">
-              <li>Prices drop</li>
-              <li>New products</li>
-              <li>Best sales</li>
-              <li>Contact us</li>
-              <li>Sitemap</li>
-              <li>Stores</li>
+              <li>Ethnic</li>
+              <li>Western Wear</li>
+              <li>Co-Ords</li>
+              
+              
             </ul>
           </div>
 
           {/* Our company */}
           <div>
-            <h3 className="text-base font-semibold mb-3">Our company</h3>
+            <h3 className="text-base font-semibold mb-3">Support</h3>
             <ul className="space-y-1 text-gray-700 text-sm">
               <li>Delivery</li>
-              <li>Legal Notice</li>
+              <li>Privacy Policy</li>
               <li>Terms and conditions of use</li>
               <li>About us</li>
               <li>Secure payment</li>
@@ -87,9 +78,9 @@ const Footer = () => {
 
           {/* Subscribe to newsletter */}
           <div>
-            <h3 className="text-base font-semibold mb-3">Subscribe to newsletter</h3>
+            <h3 className="text-base font-semibold mb-3">Join S-Mal Couture </h3>
             <p className="text-gray-700 mb-4 text-sm">
-              Subscribe to our latest newsletter to get news about special discounts.
+              Subscribe to our latest trendy collection to get special discounts.
             </p>
             <form className="flex flex-col gap-3">
               <input
@@ -127,11 +118,11 @@ const Footer = () => {
           </div>
 
           {/* Payment icons */}
-          <div className="flex gap-4 text-gray-600 text-2xl mt-4 md:mt-0">
-            <SiVisa title="Visa" />
-            <SiMastercard title="MasterCard" />
-            <SiAmericanexpress title="American Express" />
-            <SiPaypal title="PayPal" />
+          <div className="flex gap-4  text-2xl mt-4 md:mt-0">
+            <SiVisa className='text-blue-600' title="Visa" />
+            <SiMastercard  className='text-yellow-400' title="MasterCard" />
+            <SiAmericanexpress className='text-blue-600' title="American Express" />
+            <SiPaypal className='text-blue-600' title="PayPal" />
           </div>
         </div>
       </div>

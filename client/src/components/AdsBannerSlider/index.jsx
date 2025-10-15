@@ -2,10 +2,11 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import banner1 from "../../assets/banner1.jpg";
-import banner2 from "../../assets/baneer2.png";
-import banner3 from '../../assets/banner3.jpg';
-import banner4 from "../../assets/banner4.jpg";
+import banner1 from '../../assets/ban1.jpg'
+import banner2 from '../../assets/ban2.jpg'
+import banner3 from '../../assets/ban3.jpg'
+import banner4 from '../../assets/ban4.jpg'
+
 import { Navigation } from 'swiper/modules';
 import BannerBox from '../BannerBox';
 const AdsBannerSlider = (props) => {
@@ -13,7 +14,7 @@ const AdsBannerSlider = (props) => {
     <div className='py-5 w-full'>
        <Swiper
                 slidesPerView={props.items}
-                spaceBetween={10}
+                spaceBetween={20}
                 navigation={true}
                 modules={[Navigation]}
                 className="mySwiper"
@@ -30,7 +31,7 @@ const AdsBannerSlider = (props) => {
            <BannerBox img={banner3} link={'/'} />
             </SwiperSlide>
 
-             <SwiperSlide>
+               <SwiperSlide>
            <BannerBox img={banner4} link={'/'} />
             </SwiperSlide>
               </Swiper>

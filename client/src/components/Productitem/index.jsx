@@ -28,8 +28,8 @@ function getLabelText(value) {
   return `${value} Star${value !== 1 ? 's' : ''}, ${labels[value]}`;
 }
 
-function ProductItem() {
-  const [value, setValue] = React.useState(2);
+function ProductItem({ product }) {
+  const [value, setValue] = React.useState(product.rating || 2);
   const [hover, setHover] = React.useState(-1);
 
   return (
@@ -37,11 +37,12 @@ function ProductItem() {
       <div className='group imgWrapper w-[100%] overflow-hidden rounded-md relative'>
         <Link to="/">
         <div className='img  h-[250px] overflow-hidden'>
-        <img src="https://serviceapi.spicezgold.com/download/1753722939206_125c18d6-592d-4082-84e5-49707ae9a4fd1749366193911-Flying-Machine-Women-Wide-Leg-High-Rise-Light-Fade-Stretchab-1.jpg" alt=""  className='w-full'/>
-        <img src="https://serviceapi.spicezgold.com/download/1753722939207_5107b7b1-ba6d-473c-9195-8576a6a0a9611749366193848-Flying-Machine-Women-Wide-Leg-High-Rise-Light-Fade-Stretchab-3.jpg" alt=""  className='w-full transition-all duration-700 absolute top-0 left-0 opacity-0 group-hover:opacity-100 group-hover:scale-105'/>
+        <img src={product.images[0]} alt=""  className='w-full'/>
+        <img src={product.images[1]} alt=""  className='w-full transition-all duration-700 absolute top-0 left-0 opacity-0 group-hover:opacity-100 group-hover:scale-105'/>
         </div>
+
       </Link>
-      <span className='discount flex items-center absolute top-[10px] left-[10px] z-50 bg-orange-500 text-white rounded-full p-1 text-[12px] font-[500]  '> 10%</span>
+      <span className='discount flex items-center absolute top-[10px] left-[10px] z-50 bg-orange-500 text-white rounded-full p-1 text-[12px] font-[500]  '>{product.discount}%</span>
 
 
       <div className='actions absolute top-[-200px] right-[5px] z-50 flex items-center gap-2 flex-col w-[50px] transition-all duration-300 group-hover:top-[10px] opacity-0 group-hover:opacity-100'>
@@ -56,8 +57,8 @@ function ProductItem() {
       </div>
 
       <div className='info p-3 py-3 '>
-        <h6 className='text-[14px]'><Link to={'/'} className='link transition-all'>Flying Machine</Link></h6>
-        <h3 className='text-[16px] title mt-1 font-[500] text-[#000]' ><Link to={'/'} className='link transition-all'>Women Wide Leg High-Rise ...</Link></h3>
+        <h6 className='text-[14px]'><Link to={'/'} className='link transition-all'>{product.brand}</Link></h6>
+        <h3 className='text-[16px] title mt-1 font-[500] text-[#000]' ><Link to={'/'} className='link transition-all'>{product.title}</Link></h3>
         <div className='py-1'>
          <Box sx={{ width: 200, display: 'flex', alignItems: 'center' }}>
       <Rating
@@ -80,8 +81,8 @@ function ProductItem() {
         </div>
 
     <div className='flex items-center gap-4 py-1'>
-      <span className='oldPrice line-through text-gray-500 text-[16px] font-[500]'>$58.00</span>
-      <span className='oldPrice text-orange-600 font-bold'>$12.00</span>
+      <span className='oldPrice line-through text-gray-500 text-[16px] font-[500]'>${product.oldPrice}</span>
+      <span className='oldPrice text-orange-600 font-bold'>${product.newPrice}</span>
     </div>
       </div>
 

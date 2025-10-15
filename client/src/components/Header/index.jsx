@@ -60,7 +60,7 @@ const Header = () => {
           <div className="container flex flex-col md:flex-row items-center justify-between gap-3 ">
             <div className="col1 w-full md:w-[25%]">
               <Link to={"/"}>
-                <img src={logo} alt="Logo" className="h-20 w-50 rounded-2xl"/>
+                <img src={logo} alt="Logo" className="h-[70px] w-[150px] object-cover bg-transparent "/>
               </Link>
             </div>
             <div className="col2 w-full md:w-[45%] ">
