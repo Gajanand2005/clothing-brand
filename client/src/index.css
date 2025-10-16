@@ -86,3 +86,7 @@ padding: 15px;
 margin-left: -15px;
 margin-right: -15px ;
 }
+
+.MuiCheckbox-root{
+    padding: 6px !important;
+}
