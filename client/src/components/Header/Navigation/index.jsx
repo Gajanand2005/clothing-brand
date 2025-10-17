@@ -39,7 +39,7 @@ const Navigation = () => {
               </li>
               <li className="list-none relative">
                 <Link
-                  to="/"
+                  to="/ProductListing"
                   className="link transition text-[16px] !font-[500]"
                 >
                   
