@@ -4,9 +4,22 @@ import Breadcrumbs from '@mui/material/Breadcrumbs'
 import Link from '@mui/material/Link'
 import Typography from '@mui/material/Typography'
 import ProductItem from '../../components/ProductItem/index.jsx'
-
+import Button from '@mui/material/Button'
+import { BsUiRadiosGrid } from "react-icons/bs";
+import { TfiLayoutGrid2Thumb } from "react-icons/tfi";
+import { RiMenuSearchLine } from "react-icons/ri";
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 const ProductListing = () => {
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <section className='py-5'>
       <div className='container'>
@@ -30,7 +43,54 @@ const ProductListing = () => {
           <Sidebar />
         </div>
 
-        <div className='rightContent w-[80%]'>
+        <div className='rightContent w-[80%] py-2'>
+
+        <div className='bg-[#f1f1f1] p-2 w-full  mb-4 rounded-md flex items-center justify-between'>
+
+          <div className='col1 flex items-center  '>
+            <Button className='!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !text-[#000]'><RiMenuSearchLine      className='text-[rgba(0,0,0,0.7)]' /></Button>
+            <Button className='!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !text-[#000]'><BsUiRadiosGrid className='text-[rgba(0,0,0,0.7)]' /></Button>
+
+          <span className='text-[14px] font-[500] pl-3 text-[rgba(0,0,0,0.7 )]'>There are 27 products.</span>
+
+          </div>
+
+        <div className='col2 ml-auto flex items-center justify-end'>
+          <span className='text-[14px] font-[500] pl-3 text-[rgba(0,0,0,0.7 )]'>Sort By</span>
+
+        <Button
+        id="basic-button"
+        aria-controls={open ? 'basic-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        onClick={handleClick}
+      >
+        Dashboard
+      </Button>
+        
+        <Menu
+        id="basic-menu"
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+        slotProps={{
+          list: {
+            'aria-labelledby': 'basic-button',
+          },
+        }}
+      >
+        <MenuItem onClick={handleClose}>sales, highest to lowest</MenuItem>
+        <MenuItem onClick={handleClose}>Relevance</MenuItem>
+        <MenuItem onClick={handleClose}>Name, A to Z</MenuItem>
+        <MenuItem onClick={handleClose}>Name, Z to A</MenuItem>
+        <MenuItem onClick={handleClose}>Price Low to Hight</MenuItem>
+        <MenuItem onClick={handleClose}>Price Hight to Low</MenuItem>
+      </Menu>
+        </div>
+
+        </div>
+
+
             <div className='grid grid-cols-4 md:grid-cols-4 gap-4'>
               <ProductItem/>
               <ProductItem/>
@@ -40,6 +100,10 @@ const ProductListing = () => {
               <ProductItem/>
               <ProductItem/>
               <ProductItem/>
+              <ProductItem/>
+              <ProductItem/>
+              <ProductItem/>
+              <ProductItem/> 
             </div>
         </div>
 
