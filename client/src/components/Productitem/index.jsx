@@ -35,7 +35,7 @@ function ProductItem() {
   return (
     <div className='productItem shadow-lg rounded-md overflow-hidden border-2  border-[rgba(0,0,0,0.1)] '>
       <div className='group imgWrapper w-[100%] overflow-hidden rounded-md relative'>
-        <Link to="/">
+        <Link to="/product/:id">
         <div className='img  h-[250px] overflow-hidden'>
         <img src="https://serviceapi.spicezgold.com/download/1753722939206_125c18d6-592d-4082-84e5-49707ae9a4fd1749366193911-Flying-Machine-Women-Wide-Leg-High-Rise-Light-Fade-Stretchab-1.jpg" alt=""  className='w-full'/>
         <img src="https://serviceapi.spicezgold.com/download/1753722939207_5107b7b1-ba6d-473c-9195-8576a6a0a9611749366193848-Flying-Machine-Women-Wide-Leg-High-Rise-Light-Fade-Stretchab-3.jpg" alt=""  className='w-full transition-all duration-700 absolute top-0 left-0 opacity-0 group-hover:opacity-100 group-hover:scale-105'/>
@@ -56,8 +56,8 @@ function ProductItem() {
       </div>
 
       <div className='info p-3 py-3 '>
-        <h6 className='text-[14px]'><Link to={'/'} className='link transition-all'>Flying Machine</Link></h6>
-        <h3 className='text-[16px] title mt-1 font-[500] text-[#000]' ><Link to={'/'} className='link transition-all'>Women Wide Leg High-Rise ...</Link></h3>
+        <h6 className='text-[14px]'><Link to={'/product/:id'} className='link transition-all'>Flying Machine</Link></h6>
+        <h3 className='text-[16px] title mt-1 font-[500] text-[#000]' ><Link to={'/product/:id'} className='link transition-all'>Women Wide Leg High-Rise ...</Link></h3>
         <div className='py-1'>
          <Box sx={{ width: 200, display: 'flex', alignItems: 'center' }}>
       <Rating

@@ -58,7 +58,7 @@ const ProductZoom = () => {
           </Swiper>
         </div>
 
-        <div className="zoomContainer w-[85%]">
+        <div className="zoomContainer w-[85%] overflow-hidden rounded-md">
           <Swiper
           ref={zoomSliderBig}
             slidesPerView={1}
