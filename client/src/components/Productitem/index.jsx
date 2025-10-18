@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "../Productitem/style.css"
 import {Link} from 'react-router-dom';
 import Rating from '@mui/material/Rating';
@@ -9,6 +9,7 @@ import { FaHeart } from "react-icons/fa6";
 import { IoGitCompare } from "react-icons/io5";
 import { MdZoomOutMap } from "react-icons/md";
 import Tooltip from '@mui/material/Tooltip';
+import { MyContext } from '../../App';
 
 const labels = {
   0.5: 'Useless',
@@ -32,6 +33,8 @@ function ProductItem() {
   const [value, setValue] = React.useState(2);
   const [hover, setHover] = React.useState(-1);
 
+  const context= useContext(MyContext);
+
   return (
     <div className='productItem shadow-lg rounded-md overflow-hidden border-2  border-[rgba(0,0,0,0.1)] '>
       <div className='group imgWrapper w-[100%] overflow-hidden rounded-md relative'>
@@ -50,7 +53,7 @@ function ProductItem() {
         <Tooltip title="Compare" placement="left-start">
       <Button className='!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white !text-black hover:!bg-orange-500 hover:!text-white'><IoGitCompare className='text-[18px] !text-black group-!hover:text-white hover:!text-white' /> </Button></Tooltip>
       <Tooltip title="View Product Details" placement="left-start">
-      <Button className='!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white !text-black hover:!bg-orange-500 hover:!text-white'>< MdZoomOutMap className='text-[18px] !text-black group-!hover:text-white hover:!text-white' /> </Button></Tooltip>
+      <Button className='!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white !text-black hover:!bg-orange-500 hover:!text-white'onClick={()=>context.setOpenProductDetailsModel(true)}>< MdZoomOutMap className='text-[18px] !text-black group-!hover:text-white hover:!text-white' /> </Button></Tooltip>
 
       </div>
       </div>
